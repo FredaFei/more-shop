@@ -1,0 +1,29 @@
+zh-CN:
+  activemodel:
+    errors:
+      models:
+        session:
+          attributes:
+            phone:
+              blank: 请输入手机号码
+              invalid: 手机号码格式不正确
+              not_found: 该手机号码未注册
+            password:
+              blank: 请输入密码
+              too_short: 密码不能少于6个字符
+              mismatch: 密码与用户名不匹配
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: 密码不能为空
+              too_short: 密码不能少于6个字符
+            phone:
+              blank: 手机号码不能为空
+              taken: 手机号码已经被注册
+              invalid: 手机号码格式不正确
+            password_confirmation:
+              blank: 确认密码不能为空
+              confirmation: 两次密码不匹配
