@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails more-shop-1: production" uuid="9325a60f-747c-4da2-ba9a-ca7b7ed0a189">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.99.100:5002/more_shop_1_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails more-shop-1: development" uuid="d85f9183-c0a3-4c87-9987-e515a944b54a">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.99.100:5002/more_shop_1_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails more-shop-1: test" uuid="7fb094a0-c098-423e-9b94-9ae8225eb0fe">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.99.100:5002/more_shop_1_test</jdbc-url>
+    </data-source>
+  </component>
+</project>
