@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   delete '/sessions', to: 'sessions#destroy'
   resources :users
   resources :sessions, only: [:create]
+  resources :shops
 end
