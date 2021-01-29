@@ -24,7 +24,7 @@ docker run -v more-shop-1-data:/var/lib/postgresql/data -p 5002:5432 -e POSTGRES
 
 其中
 
-+ more-shop-1-data 是数据库目录名，可以替换为任意目录名，也可以替换为绝对路径
++ more-shopbbin-1-data 是数据库目录名，可以替换为任意目录名，也可以替换为绝对路径
 + 5001 是数据库服务端口名，可以随意替换，但要确保 database.yml 也作对应修改
 + POSTGRES_USER=ha 是用户名，可以随意替换，但要确保 database.yml 也作对应修改
 + POSTGRES_PASSWORD=123456 是密码，可以随意替换，但要确保 database.yml 也作对应修改
@@ -65,3 +65,9 @@ docker container prune //删除无用容器
 `./spec/acceptance`和`./spec/requests`
 作用：两个目录下的文件均用来测试controller
 差异：`acceptance`只测试成功的（成功才可创建文档），`requests`可测试失败的
+
+
+### carrierwave
++ [955yes](http://www.955yes.com/ask/112352062.html)
++ [stylesror](http://stylesror.github.io/)
++ [carrierwaveuploader](https://github.com/carrierwaveuploader/carrierwave)
