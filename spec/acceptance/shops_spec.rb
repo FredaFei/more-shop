@@ -1,13 +1,11 @@
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
-resource "Users" do
-  let(:user) { create :user }
-  post "/users" do
+resource "Shops" do
+  post "/shops" do
     parameter :phone, '手机号码', type: :string, required: true
-    parameter :password, '密码', type: :string, required: true
-    parameter :password_confirmation, '确认密码', type: :string, required: true
-    example "创建用户（注册）" do
-      do_request(phone: user.phone, password: user.password, password_confirmation: user.password_confirmation)
+    example "创建店铺" do
+      @file = fixture_file_upload('spec/support/test_images/cat.jpg', 'image/jpg')
+      do_request(logo: @file)
       expect(status).to eq 200
     end
   end

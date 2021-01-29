@@ -1,6 +1,8 @@
 require 'rspec_api_documentation'
 require 'api_documentation_helper'
 
+require 'carrierwave'
+
 RspecApiDocumentation.configure do |config|
   config.request_headers_to_include = %w(Content-Type Cookie)
   config.response_headers_to_include = %w(Content-Type Set-Cookie)
@@ -31,3 +33,16 @@ RSpec.configure do |config|
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
 end
+
+def file_path( *paths )
+  File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', *paths))
+end
+
+def public_path( *paths )
+  File.expand_path(File.join(File.dirname(__FILE__), 'public', *paths))
+end
+
+def tmp_path( *paths )
+  File.expand_path(File.join(File.dirname(__FILE__), 'tmp', *paths))
+end
+CarrierWave.root = public_path
